@@ -1,0 +1,42 @@
+{
+  "name": "telegram-action",
+  "author": "Jocimar Costa",
+  "description": "It will be a telegram automation tool, with it it will be possible to add people in groups/channel.",
+  "keywords": [
+    "telegram",
+    "bot telegram",
+    "bot"
+  ],
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./dist/server.js",
+    "dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/server.ts",
+    "build": "tsc --build",
+    "clean": "tsc --build --clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jocimarjsc"
+  },
+  "bugs": {
+    "url": "https://github.com/jocimarjsc"
+  },
+  "homepage": "https://github.com/jocimarjsc",
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "prisma": "^3.11.1",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "@prisma/client": "^3.11.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mysql": "^2.18.1",
+    "telegraf": "^4.7.0"
+  }
+}
